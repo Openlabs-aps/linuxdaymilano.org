@@ -65,6 +65,12 @@ jQuery(function($) {'use strict',
 	    filter: ':not(.no-scroll)'
 	});
 
+	// close navbar on menu select
+	$('.nav a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	});
+	
+
 });
 
 

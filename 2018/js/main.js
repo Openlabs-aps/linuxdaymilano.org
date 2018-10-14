@@ -58,10 +58,10 @@ jQuery(function($) {'use strict',
 
 	$('.main-nav ul').onePageNav({
 		currentClass: 'active',
-	    changeHash: false,
-	    scrollSpeed: 900,
-	    scrollOffset: 0,
-	    scrollThreshold: 0.3,
+	    changeHash: true,
+	    scrollSpeed: 0,
+	    scrollOffset: 100,
+	    scrollThreshold: 0,
 	    filter: ':not(.no-scroll)'
 	});
 

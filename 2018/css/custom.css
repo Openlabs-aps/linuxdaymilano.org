@@ -1,0 +1,118 @@
+.Page.Page--schedule #hero {
+  display: flex;
+  align-items: flex-end;
+  min-height: 40rem;
+  background: url("../images/slider/bg1.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .Page.Page--schedule #hero {
+      padding-bottom: 2rem;
+      padding-left: 3rem; } }
+  .Page.Page--schedule #hero .Hero__content {
+    background-color: black;
+    padding: 1rem; }
+    @media (max-width: 992px) {
+      .Page.Page--schedule #hero .Hero__content {
+        width: 100%; } }
+    .Page.Page--schedule #hero .Hero__content h2 {
+      margin-top: 0.5rem; }
+      @media (max-width: 992px) {
+        .Page.Page--schedule #hero .Hero__content h2 {
+          font-size: 2.75rem; } }
+
+.Page.Page--schedule #schedule {
+  color: #333;
+  padding: 2.5rem 0; }
+
+.Page.Page--schedule .TimeSlot {
+  margin: 2rem 2rem; }
+  @media (min-width: 992px) {
+    .Page.Page--schedule .TimeSlot {
+      display: flex; } }
+  .Page.Page--schedule .TimeSlot__time {
+    font-size: 2.5rem;
+    flex-basis: 5rem; }
+  .Page.Page--schedule .TimeSlot__events {
+    flex: 1; }
+    @media (min-width: 992px) {
+      .Page.Page--schedule .TimeSlot__events {
+        display: flex;
+        margin-left: 2rem; } }
+    .Page.Page--schedule .TimeSlot__events .Event {
+      margin-bottom: 1rem; }
+      @media (min-width: 992px) {
+        .Page.Page--schedule .TimeSlot__events .Event {
+          margin: 1rem;
+          flex-basis: 25%; } }
+      .Page.Page--schedule .TimeSlot__events .Event--wide {
+        flex-basis: 100%; }
+    @media (min-width: 992px) {
+      .Page.Page--schedule .TimeSlot__events .EventSeparator {
+        margin: 1rem;
+        flex-basis: 25%; } }
+
+.Page.Page--schedule .Event {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #e2e2e2; }
+  @media (min-width: 992px) {
+    .Page.Page--schedule .Event {
+      padding: 1.5rem 2rem; } }
+  .Page.Page--schedule .Event:hover {
+    background-color: #f7f7f7; }
+  .Page.Page--schedule .Event__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem; }
+  .Page.Page--schedule .Event__author {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .Page.Page--schedule .Event__meta {
+    margin-top: auto;
+    display: flex;
+    font-size: 1.5rem; }
+  .Page.Page--schedule .Event__duration {
+    flex: 1; }
+
+.Page.Page--home .Home {
+  display: flex;
+  min-height: 60vh;
+  background: url("../images/slider/bg1.jpg") no-repeat center center fixed;
+  align-items: flex-end;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .Page.Page--home .Home {
+      min-height: 90vh;
+      padding-bottom: 10rem;
+      background: url("../images/slider/bg2.jpg") no-repeat center center fixed; } }
+  .Page.Page--home .Home__content {
+    background: rgba(0, 0, 0, 0.7); }
+    @media (min-width: 992px) {
+      .Page.Page--home .Home__content {
+        padding: 10px 60px 35px; } }
+    @media (max-width: 992px) {
+      .Page.Page--home .Home__content {
+        width: 100%;
+        padding-bottom: 20px; }
+        .Page.Page--home .Home__content .Home__subtitle {
+          display: none; }
+        .Page.Page--home .Home__content h2 {
+          font-size: 2.25rem; } }
+
+.Page.Page--home .Sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10rem; }
+  .Page.Page--home .Sponsors .Sponsor {
+    flex-basis: 50%;
+    padding: 1rem; }
+    @media (min-width: 992px) {
+      .Page.Page--home .Sponsors .Sponsor {
+        flex-basis: 33%; } }
+    .Page.Page--home .Sponsors .Sponsor img {
+      max-width: 100%;
+      display: block;
+      width: 100%; }
+
+.Page.Page--home .light {
+  display: none; }

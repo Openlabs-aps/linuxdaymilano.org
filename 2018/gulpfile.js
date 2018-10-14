@@ -94,7 +94,7 @@ gulp.task('dev', ['browserSync', 'less', 'sass', 'minify-css', 'minify-js'], fun
 // Compiles SCSS files from /scss into /css
 // NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
 gulp.task('sass', function() {
-    return gulp.src('scss/schedule.scss')
+    return gulp.src('scss/custom.scss')
         .pipe(sass())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({

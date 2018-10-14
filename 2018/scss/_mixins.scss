@@ -82,3 +82,35 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
+
+$breakpoints: (
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin media-breakpoint-up($breakpointName) {
+    $width: map-get($breakpoints, $breakpointName);
+
+    @if $width {
+        @media (min-width: $width) {
+            @content;
+        }
+    } @else {
+        @error "Impossible to find breakpoint #{$breakpointName}";
+    }
+}
+
+@mixin media-breakpoint-down($breakpointName) {
+    $width: map-get($breakpoints, $breakpointName);
+
+    @if $width {
+        @media (max-width: $width) {
+            @content;
+        }
+    } @else {
+        @error "Impossible to find breakpoint #{$breakpointName}";
+    }
+}

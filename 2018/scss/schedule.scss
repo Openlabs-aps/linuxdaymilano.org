@@ -1,39 +1,11 @@
-$breakpoints: (
-  xs: 320px,
-  sm: 480px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
-
-@mixin media-breakpoint-up($breakpointName) {
-    $width: map-get($breakpoints, $breakpointName);
-
-    @if $width {
-        @media (min-width: $width) {
-            @content;
-        }
-    } @else {
-        @error "Impossible to find breakpoint #{$breakpointName}";
-    }
-}
-
-@mixin media-breakpoint-down($breakpointName) {
-    $width: map-get($breakpoints, $breakpointName);
-
-    @if $width {
-        @media (max-width: $width) {
-            @content;
-        }
-    } @else {
-        @error "Impossible to find breakpoint #{$breakpointName}";
-    }
-}
-
 .Page.Page--schedule {
     #hero {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         @include media-breakpoint-up(lg) {
             padding-bottom: 2rem;
             padding-left: 3rem;
@@ -66,18 +38,25 @@ $breakpoints: (
 
     .TimeSlot {
         @include media-breakpoint-up(lg) {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
         margin: 2rem 2rem;
         &__time {
             font-size: 2.5rem;
-            flex-basis: 5rem;
+            -ms-flex-preferred-size: 5rem;
+                flex-basis: 5rem;
         }
 
         &__events {
-            flex: 1;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
             
             @include media-breakpoint-up(lg) {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 margin-left: 2rem;
             }
@@ -86,26 +65,34 @@ $breakpoints: (
                 margin-bottom: 1rem;
                 @include media-breakpoint-up(lg) {
                     margin: 1rem;
-                    flex-basis: 25%;
+                    -ms-flex-preferred-size: 25%;
+                        flex-basis: 25%;
                 }
 
                 &--wide {
-                    flex-basis: 100%;
+                    -ms-flex-preferred-size: 100%;
+                        flex-basis: 100%;
                 }
             }
 
             .EventSeparator {
                 @include media-breakpoint-up(lg) {
                     margin: 1rem;
-                    flex-basis: 25%;
+                    -ms-flex-preferred-size: 25%;
+                        flex-basis: 25%;
                 }
             }
         }
     }
 
     .Event {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         padding: 1.5rem;
         @include media-breakpoint-up(lg) {
@@ -130,11 +117,15 @@ $breakpoints: (
 
         &__meta {
             margin-top: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             font-size: 1.5rem;
         }
         &__duration {
-            flex: 1;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
         }
     }
 }

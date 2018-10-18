@@ -93,9 +93,27 @@
             <div class="TimeSlot__time">10:00</div>
             <div class="TimeSlot__events">
                 <div class="Event">
-                    <div class="Event__title">Carables</div>
+                    <div class="Event__title">Careables: oggetti che curano autoprogettati e opensource</div>
                     <div class="Event__subtitle"></div>
                     <div class="Event__author">Enrico Bassi - OpenDot</div>
+                    <div class="Event__description">
+                        Quando si parla di soluzioni per l'healthcare, si pensa spesso a laboratori di ricerca di
+                        grandi aziende o start-up innovative.
+                        C'è una nuova categoria di oggetti, pensati dagli stessi utenti che li useranno, basati su
+                        opensource e tecnologie accessibili,
+                        sviluppati da communities: i "Careables".
+                        Il neologismo descrive proprio le soluzioni dal basso, emerse dall'esperienza quotidiana di chi
+                        vive con limitazioni fisiche e
+                        cerca soluzioni per le sue necessità, trasformando il suo ruolo da passivo (implicito nel
+                        termine "paziente") in attivo co-progettista.
+                        Tutto ciò è possibile grazie a tecnologie come stampa 3D, taglio laser, fresa CNC, Arduino,
+                        Raspberry Pi, la filosofia Opensource, spazi
+                        come i Fablab, il lavoro online e offline delle community e l'incontro di skills molto diverse
+                        tra loro.
+                        Durante la presentazione Enrico Bassi, coordinatore del fablab Opendot e referente del Meetup
+                        Milanese per la progettazione di Careables,
+                        spiegherà in cosa consiste il progetto, come partecipare e quali sono le sfide in corso
+                    </div>
                     <div class="Event__meta">
                         <div class="Event__duration">60 min</div>
                         <div class="Event__place">U7-04</div>
@@ -416,9 +434,19 @@
                     <div class="Event__subtitle"></div>
                     <div class="Event__author">IRALAB</div>
                     <div class="Event__description">
-                        Questa presentazione propone di presentare al pubblico gli sviluppi tecnici avvenuti nel corso degli ultimi 90 anni circa le automobili “automatiche”, le motivazioni per le quali è necessaria una forte attività di ricerca e di sperimentazione ed i benefici che ne conseguiranno per la società civile. La presentazione prevede la proiezione di diversi video storici che dimostrano come il concetto di “autonomous driving” sia stato affrontato nelle diverse epoche storiche, partendo dai primi modelli radiocomandati fino alle visioni presentate nelle esposizioni universali di metà secolo 900, fino all’età moderna che contempla gli ultimi 30 anni.
+                        Questa presentazione propone di presentare al pubblico gli sviluppi tecnici avvenuti nel corso
+                        degli ultimi 90 anni circa le automobili “automatiche”, le motivazioni per le quali è
+                        necessaria una forte attività di ricerca e di sperimentazione ed i benefici che ne
+                        conseguiranno per la società civile. La presentazione prevede la proiezione di diversi video
+                        storici che dimostrano come il concetto di “autonomous driving” sia stato affrontato nelle
+                        diverse epoche storiche, partendo dai primi modelli radiocomandati fino alle visioni presentate
+                        nelle esposizioni universali di metà secolo 900, fino all’età moderna che contempla gli ultimi
+                        30 anni.
                         <br><br>
-                        Verranno presentate le difficoltà tecniche, ovvero di percezione e modellazione dell’ambiente, in congiunzione con l’attuale documento di classificazione dei livelli di automazione (SAE J3016) ed i concetti di Dynamic Driving Task e Driving Mode, con degli esempi sui vari livelli di automazione (da SAE-0 a SAE-5).
+                        Verranno presentate le difficoltà tecniche, ovvero di percezione e modellazione dell’ambiente,
+                        in congiunzione con l’attuale documento di classificazione dei livelli di automazione (SAE
+                        J3016) ed i concetti di Dynamic Driving Task e Driving Mode, con degli esempi sui vari livelli
+                        di automazione (da SAE-0 a SAE-5).
                     </div>
                     <div class="Event__meta">
                         <div class="Event__duration">60 min</div>
@@ -662,7 +690,8 @@
     <script>
         $(".Event").click(function () {
             var eventTitle = $(this).find(".Event__title").text();
-            var eventDescription = $(this).find(".Event__description").html() || "Nessuna descrizione disponibile";
+            var eventDescription = $(this).find(".Event__description").html() ||
+                "Nessuna descrizione disponibile";
             var eventSpeaker = $(this).find(".Event__author").text();
 
             $("#eventDetailsModal #eventDetailsModalTitle").text(eventTitle);

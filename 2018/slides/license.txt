@@ -1,0 +1,13 @@
+LinuxDay2018_public_v2.pdf -- CreativeCommons
+LinuxDay_Schiaffino.pdf -- CreativeCommons
+osi-milanolinuxday.pdf -- CC-BY-SA 4.0
+fingerprinting linuxday2018.pdf -- CreativeCommons
+web linuxday2018.pdf -- CreativeCommons
+LiberaIlTuoRouter.pdf -- CC-BY-NC-SA 3.0
+27anni_dopo_la_morte._Il_diritto_d%27autore_in_Unione_europea_-_Linux_day_2018.pdf -- CC-SA 4.0
+cricut_freecut_cc.pdf -- CC-BY
+LinuxDay Bicocca.pdf -- CC
+LibreFibre_Talk.pdf -- LibreLicense (https://github.com/openspace42/LibreLicense)
+aenigma_Talk.pdf -- LibreLicense (https://github.com/openspace42/LibreLicense)
+IT Security_linuxDay-MI.pdf -- CC
+

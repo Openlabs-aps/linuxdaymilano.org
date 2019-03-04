@@ -76,15 +76,14 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 // Configure the browserSync task
 gulp.task('browserSync', function() {
     browserSync.init({
-        server: {
-            baseDir: ''
-        },
+        server: ['./']
     })
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'less', 'sass', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
+    gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
@@ -95,9 +94,8 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
 // Compiles SCSS files from /scss into /css
 // NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
 gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
+    return gulp.src('scss/custom.scss')
         .pipe(sass())
-        .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true

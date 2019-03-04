@@ -1,4 +1,4 @@
-RedirectMatch ^/$ http://linuxdaymilano.org/2017
+RedirectMatch ^/$ http://linuxdaymilano.org/2018
 
 RewriteEngine on
 RewriteBase /wiki

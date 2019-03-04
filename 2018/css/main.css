@@ -542,7 +542,8 @@ h2 {
 .coding {
   top: 0;
   width: 40%;
-  padding-left: 100px;
+  padding: 70px;
+  padding-right: 0;
 }
 
 .coding img {
@@ -581,6 +582,17 @@ h2 {
   background-color: #126d55
 }
 
+#contact .btn-primary {
+  background-color: #ae750d;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  margin-top: 28px;
+}
+
+#contact .btn-primary:hover {
+  background-color: #92640d
+}
 
 
 /*************************
@@ -676,7 +688,7 @@ h2 {
 
 #sponsor h2 {
   margin-top: 90px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #sponsor .item ul {

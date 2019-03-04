@@ -1,0 +1,147 @@
+.Page.Page--schedule {
+    #hero {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 2rem;
+            padding-left: 3rem;
+        }
+        min-height: 40rem;
+        background: url("../images/slider/bg1.jpg") no-repeat center center fixed;
+        background-size: cover;
+
+        .Hero__content {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+            background-color: black;
+            padding: 1rem;
+
+            h2 {
+                margin-top: 0.5rem;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 2.75rem;
+                }
+            }
+        }
+    }
+
+    #schedule {
+        color: #333;
+        padding: 2.5rem 0;
+    }
+
+    .TimeSlot {
+        @include media-breakpoint-up(lg) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        margin: 2rem 2rem;
+        &__time {
+            font-size: 2.5rem;
+            -ms-flex-preferred-size: 5rem;
+                flex-basis: 5rem;
+        }
+
+        &__events {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+            
+            @include media-breakpoint-up(lg) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-left: 2rem;
+            }
+
+            .Event {
+                margin-bottom: 1rem;
+                @include media-breakpoint-up(lg) {
+                    margin: 1rem;
+                    -ms-flex-preferred-size: 25%;
+                        flex-basis: 25%;
+                }
+
+                &--wide {
+                    -ms-flex-preferred-size: 100%;
+                        flex-basis: 100%;
+                }
+            }
+
+            .EventSeparator {
+                @include media-breakpoint-up(lg) {
+                    margin: 1rem;
+                    -ms-flex-preferred-size: 25%;
+                        flex-basis: 25%;
+                }
+            }
+        }
+    }
+
+    .Event {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        padding: 1.5rem;
+        @include media-breakpoint-up(lg) {
+            padding: 1.5rem 2rem;
+        }
+        //box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+        //border-radius: 5px;
+        border: 1px solid #e2e2e2;
+        &:hover {
+            background-color: #f7f7f7;
+        }
+        
+        &__title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        &__author {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &__meta {
+            margin-top: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 1.5rem;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__info {
+            border: 1px solid #e2e2e2;
+            border-radius: 100%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+    }
+}
